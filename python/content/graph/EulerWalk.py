@@ -1,16 +1,17 @@
 """
-Author: Simon Lindholm
-Date: 2019-12-31
-License: CC0
-Source: folklore
-Description: Eulerian undirected/directed path/cycle algorithm.
-Input should be a list of (dest, global edge index), where
-for undirected graphs, forward/backward edges have the same index.
-Returns a list of nodes in the Eulerian path/cycle with src at both start and end, or
-empty list if no cycle/path exists.
-To get edge indices back, add .second to s and ret.
-Time: O(V + E)
-Status: stress-tested
+ * Author: Simon Lindholm
+ * Date: 2019-12-31
+ * License: CC0
+ * Source: folklore
+ * Description: Eulerian undirected/directed path/cycle algorithm.
+ * Input should be a list of (dest, global edge index), where
+ * for undirected graphs, forward/backward edges have the same index.
+ * Returns a list of nodes in the Eulerian path/cycle with src at both start and end, or
+ * empty list if no cycle/path exists.
+ * To get edge indices back, add .second to s and ret.
+ * Time: O(V + E)
+ * Status: stress-tested
+
 """
 
 def euler_walk(gr, nedges, src=0):

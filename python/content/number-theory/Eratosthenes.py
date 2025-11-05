@@ -1,11 +1,12 @@
 """
-Author: Håkan Terelius
-Date: 2009-08-26
-License: CC0
-Source: http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
-Description: Prime sieve for generating all primes up to a certain limit. is_prime[i] is True iff i is a prime.
-Time: lim=100'000'000 ≈ 0.8 s. Runs 30% faster if only odd indices are stored.
-Status: Tested
+ * Author: Håkan Terelius
+ * Date: 2009-08-26
+ * License: CC0
+ * Source: http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
+ * Description: Prime sieve for generating all primes up to a certain limit. is_prime[i] is True iff i is a prime.
+ * Time: lim=100'000'000 ≈ 0.8 s. Runs 30% faster if only odd indices are stored.
+ * Status: Tested
+
 """
 
 def eratosthenes_sieve(lim):

@@ -1,13 +1,14 @@
 """
-Author: Simon Lindholm
-Date: 2015-03-20
-License: CC0
-Source: me
-Description: Split a monotone function on [from, to) into a minimal set of half-open intervals on which it has the same value.
-Runs a callback g for each such interval.
-Usage: constant_intervals(0, len(v), lambda x: v[x], lambda lo, hi, val: ...)
-Time: O(k*log(n/k))
-Status: tested
+ * Author: Simon Lindholm
+ * Date: 2015-03-20
+ * License: CC0
+ * Source: me
+ * Description: Split a monotone function on [from, to) into a minimal set of half-open intervals on which it has the same value.
+ * Runs a callback g for each such interval.
+ * Usage: constant_intervals(0, len(v), lambda x: v[x], lambda lo, hi, val: ...)
+ * Time: O(k*log(n/k))
+ * Status: tested
+
 """
 
 def _rec(from_idx, to_idx, f, g, i, p, q):

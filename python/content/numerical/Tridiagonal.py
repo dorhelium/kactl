@@ -1,28 +1,29 @@
 """
-Author: Ulf Lundstrom, Simon Lindholm
-Date: 2009-08-15
-License: CC0
-Source: https://en.wikipedia.org/wiki/Tridiagonal_matrix_algorithm
-Description: x=tridiagonal(d,p,q,b) solves the equation system
-    b = diag_matrix * x
-where diag_matrix is a tridiagonal matrix with:
-- d[i] on the main diagonal
-- p[i] on the superdiagonal
-- q[i] on the subdiagonal
+ * Author: Ulf Lundstrom, Simon Lindholm
+ * Date: 2009-08-15
+ * License: CC0
+ * Source: https://en.wikipedia.org/wiki/Tridiagonal_matrix_algorithm
+ * Description: x=tridiagonal(d,p,q,b) solves the equation system
+ *     b = diag_matrix * x
+ * where diag_matrix is a tridiagonal matrix with:
+ * - d[i] on the main diagonal
+ * - p[i] on the superdiagonal
+ * - q[i] on the subdiagonal
 
-This is useful for solving problems on the type
-    a[i] = b[i]*a[i-1] + c[i]*a[i+1] + d[i], 1 <= i <= n,
-where a[0], a[n+1], b[i], c[i] and d[i] are known. a can then be obtained from
-    {a[i]} = tridiagonal({1,-1,-1,...,-1,1}, {0,c[1],c[2],...,c[n]},
-                         {b[1],b[2],...,b[n],0}, {a[0],d[1],d[2],...,d[n],a[n+1]})
+ * This is useful for solving problems on the type
+ *     a[i] = b[i]*a[i-1] + c[i]*a[i+1] + d[i], 1 <= i <= n,
+ * where a[0], a[n+1], b[i], c[i] and d[i] are known. a can then be obtained from
+ *     {a[i]} = tridiagonal({1,-1,-1,...,-1,1}, {0,c[1],c[2],...,c[n]},
+ *                          {b[1],b[2],...,b[n],0}, {a[0],d[1],d[2],...,d[n],a[n+1]})
 
-Fails if the solution is not unique.
+ * Fails if the solution is not unique.
 
-If |d[i]| > |p[i]| + |q[i-1]| for all i, or |d[i]| > |p[i-1]| + |q[i]|,
-or the matrix is positive definite, the algorithm is numerically stable and
-neither tr nor the check for diag[i] == 0 is needed.
-Time: O(N)
-Status: Brute-force tested mod 5 and 7 and stress-tested for real matrices obeying the criteria above.
+ * If |d[i]| > |p[i]| + |q[i-1]| for all i, or |d[i]| > |p[i-1]| + |q[i]|,
+ * or the matrix is positive definite, the algorithm is numerically stable and
+ * neither tr nor the check for diag[i] == 0 is needed.
+ * Time: O(N)
+ * Status: Brute-force tested mod 5 and 7 and stress-tested for real matrices obeying the criteria above.
+
 """
 
 def tridiagonal(diag, super_diag, sub, b):

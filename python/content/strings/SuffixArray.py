@@ -1,19 +1,20 @@
 """
-Author: 罗穗骞, chilli
-Date: 2019-04-11
-License: Unknown
-Source: Suffix array - a powerful tool for dealing with strings
-(Chinese IOI National team training paper, 2009)
-Description: Builds suffix array for a string.
-sa[i] is the starting index of the suffix which
-is i'th in the sorted suffix array.
-The returned list is of size n+1, and sa[0] = n.
-The lcp array contains longest common prefixes for
-neighbouring strings in the suffix array:
-lcp[i] = lcp(sa[i], sa[i-1]), lcp[0] = 0.
-The input string must not contain any nul chars.
-Time: O(n log n)
-Status: stress-tested
+ * Author: 罗穗骞, chilli
+ * Date: 2019-04-11
+ * License: Unknown
+ * Source: Suffix array - a powerful tool for dealing with strings
+ * (Chinese IOI National team training paper, 2009)
+ * Description: Builds suffix array for a string.
+ * sa[i] is the starting index of the suffix which
+ * is i'th in the sorted suffix array.
+ * The returned list is of size n+1, and sa[0] = n.
+ * The lcp array contains longest common prefixes for
+ * neighbouring strings in the suffix array:
+ * lcp[i] = lcp(sa[i], sa[i-1]), lcp[0] = 0.
+ * The input string must not contain any nul chars.
+ * Time: O(n log n)
+ * Status: stress-tested
+
 """
 
 

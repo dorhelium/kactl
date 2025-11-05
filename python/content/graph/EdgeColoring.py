@@ -1,15 +1,16 @@
 """
-Author: Simon Lindholm
-Date: 2020-10-12
-License: CC0
-Source: https://en.wikipedia.org/wiki/Misra_%26_Gries_edge_coloring_algorithm
-https://codeforces.com/blog/entry/75431 for the note about bipartite graphs.
-Description: Given a simple, undirected graph with max degree D, computes a
-(D + 1)-coloring of the edges such that no neighboring edges share a color.
-(D-coloring is NP-hard, but can be done for bipartite graphs by repeated matchings of
-max-degree nodes.)
-Time: O(NM)
-Status: stress-tested, tested on kattis:gamescheduling
+ * Author: Simon Lindholm
+ * Date: 2020-10-12
+ * License: CC0
+ * Source: https://en.wikipedia.org/wiki/Misra_%26_Gries_edge_coloring_algorithm
+ * https://codeforces.com/blog/entry/75431 for the note about bipartite graphs.
+ * Description: Given a simple, undirected graph with max degree D, computes a
+ * (D + 1)-coloring of the edges such that no neighboring edges share a color.
+ * (D-coloring is NP-hard, but can be done for bipartite graphs by repeated matchings of
+ * max-degree nodes.)
+ * Time: O(NM)
+ * Status: stress-tested, tested on kattis:gamescheduling
+
 """
 
 def edge_coloring(N, edges):

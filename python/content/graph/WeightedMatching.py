@@ -1,16 +1,17 @@
 """
-Author: Benjamin Qi, chilli
-Date: 2020-04-04
-License: CC0
-Source: https://github.com/bqi343/USACO/blob/master/Implementations/content/graphs%20(12)/Matching/Hungarian.h
-Description: Given a weighted bipartite graph, matches every node on
-the left with a node on the right such that no
-nodes are in two matchings and the sum of the edge weights is minimal. Takes
-cost[N][M], where cost[i][j] = cost for L[i] to be matched with R[j] and
-returns (min cost, match), where L[i] is matched with
-R[match[i]]. Negate costs for max cost. Requires N <= M.
-Time: O(N^2 M)
-Status: Tested on kattis:cordonbleu, stress-tested
+ * Author: Benjamin Qi, chilli
+ * Date: 2020-04-04
+ * License: CC0
+ * Source: https://github.com/bqi343/USACO/blob/master/Implementations/content/graphs%20(12)/Matching/Hungarian.h
+ * Description: Given a weighted bipartite graph, matches every node on
+ * the left with a node on the right such that no
+ * nodes are in two matchings and the sum of the edge weights is minimal. Takes
+ * cost[N][M], where cost[i][j] = cost for L[i] to be matched with R[j] and
+ * returns (min cost, match), where L[i] is matched with
+ * R[match[i]]. Negate costs for max cost. Requires N <= M.
+ * Time: O(N^2 M)
+ * Status: Tested on kattis:cordonbleu, stress-tested
+
 """
 
 def hungarian(a):

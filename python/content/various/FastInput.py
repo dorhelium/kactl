@@ -1,14 +1,15 @@
 """
-Author: chilli
-License: CC0
-Source: Own work
-Description: Read an integer from stdin. Usage requires your program to pipe in
-input from file.
-Note: In Python, sys.stdin.read() or input() are already quite efficient.
-For competitive programming, using sys.stdin.buffer can provide speed improvements.
-Usage: ./a.py < input.txt
-Time: About 5x as fast as cin/scanf in C++. In Python, use sys.stdin for fast input.
-Status: tested on SPOJ INTEST, unit tested
+ * Author: chilli
+ * License: CC0
+ * Source: Own work
+ * Description: Read an integer from stdin. Usage requires your program to pipe in
+ * input from file.
+ * Note: In Python, sys.stdin.read() or input() are already quite efficient.
+ * For competitive programming, using sys.stdin.buffer can provide speed improvements.
+ * Usage: ./a.py < input.txt
+ * Time: About 5x as fast as cin/scanf in C++. In Python, use sys.stdin for fast input.
+ * Status: tested on SPOJ INTEST, unit tested
+
 """
 
 import sys

@@ -1,13 +1,14 @@
 """
-Author: Lukas Polacek, Simon Lindholm
-Date: 2019-12-26
-License: CC0
-Source: folklore
-Description: Disjoint-set data structure with undo.
-If undo is not needed, skip st, time() and rollback().
-Usage: t = uf.time(); ...; uf.rollback(t)
-Time: O(log(N))
-Status: tested as part of DirectedMST.h
+ * Author: Lukas Polacek, Simon Lindholm
+ * Date: 2019-12-26
+ * License: CC0
+ * Source: folklore
+ * Description: Disjoint-set data structure with undo.
+ * If undo is not needed, skip st, time() and rollback().
+ * Usage: t = uf.time(); ...; uf.rollback(t)
+ * Time: O(log(N))
+ * Status: tested as part of DirectedMST.h
+
 """
 
 class RollbackUF:

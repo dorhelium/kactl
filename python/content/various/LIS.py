@@ -1,9 +1,10 @@
 """
-Author: Johan Sannemo
-License: CC0
-Description: Compute indices for the longest increasing subsequence.
-Time: O(N * log N)
-Status: Tested on kattis:longincsubseq, stress-tested
+ * Author: Johan Sannemo
+ * License: CC0
+ * Description: Compute indices for the longest increasing subsequence.
+ * Time: O(N * log N)
+ * Status: Tested on kattis:longincsubseq, stress-tested
+
 """
 
 from bisect import bisect_left

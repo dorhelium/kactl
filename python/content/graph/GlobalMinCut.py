@@ -1,11 +1,12 @@
 """
-Author: Simon Lindholm
-Date: 2021-01-09
-License: CC0
-Source: https://en.wikipedia.org/wiki/Stoer-Wagner_algorithm
-Description: Find a global minimum cut in an undirected graph, as represented by an adjacency matrix.
-Time: O(V^3)
-Status: Stress-tested together with GomoryHu
+ * Author: Simon Lindholm
+ * Date: 2021-01-09
+ * License: CC0
+ * Source: https://en.wikipedia.org/wiki/Stoer-Wagner_algorithm
+ * Description: Find a global minimum cut in an undirected graph, as represented by an adjacency matrix.
+ * Time: O(V^3)
+ * Status: Stress-tested together with GomoryHu
+
 """
 
 def global_min_cut(mat):

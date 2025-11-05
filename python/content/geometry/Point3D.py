@@ -1,12 +1,13 @@
 """
-Author: Ulf Lundstrom with inspiration from tinyKACTL
-Date: 2009-04-14
-License: CC0
-Source:
-Description: Class to handle points in 3D space.
-    T can be e.g. float or int.
-Usage:
-Status: tested, except for phi and theta
+ * Author: Ulf Lundstrom with inspiration from tinyKACTL
+ * Date: 2009-04-14
+ * License: CC0
+ * Source:
+ * Description: Class to handle points in 3D space.
+ *     T can be e.g. float or int.
+ * Usage:
+ * Status: tested, except for phi and theta
+
 """
 
 import math

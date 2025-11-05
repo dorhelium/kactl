@@ -1,11 +1,12 @@
 """
-Author: Simon Lindholm
-Date: 2016-09-06
-License: CC0
-Source: folklore
-Description: Calculates determinant of a matrix. Destroys the matrix.
-Time: O(N^3)
-Status: somewhat tested
+ * Author: Simon Lindholm
+ * Date: 2016-09-06
+ * License: CC0
+ * Source: folklore
+ * Description: Calculates determinant of a matrix. Destroys the matrix.
+ * Time: O(N^3)
+ * Status: somewhat tested
+
 """
 
 def det(a):

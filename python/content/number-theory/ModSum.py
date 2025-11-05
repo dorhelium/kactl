@@ -1,14 +1,15 @@
 """
-Author: Simon Lindholm
-Date: 2015-06-23
-License: CC0
-Source: own work
-Description: Sums of mod'ed arithmetic progressions.
+ * Author: Simon Lindholm
+ * Date: 2015-06-23
+ * License: CC0
+ * Source: own work
+ * Description: Sums of mod'ed arithmetic progressions.
 
-modsum(to, c, k, m) = sum_{i=0}^{to-1} (ki+c) % m
-divsum is similar but for floored division.
-Time: O(log(m)), with a large constant.
-Status: Tested for all |k|,|c|,to,m <= 50, and on kattis:aladin
+ * modsum(to, c, k, m) = sum_{i=0}^{to-1} (ki+c) % m
+ * divsum is similar but for floored division.
+ * Time: O(log(m)), with a large constant.
+ * Status: Tested for all |k|,|c|,to,m <= 50, and on kattis:aladin
+
 """
 
 def sumsq(to):

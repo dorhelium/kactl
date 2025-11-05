@@ -1,13 +1,14 @@
 """
-Author: Johan Sannemo
-Date: 2015-02-06
-License: CC0
-Source: Folklore
-Description: Calculate power of two jumps in a tree,
-to support fast upward jumps and LCAs.
-Assumes the root node points to itself.
-Time: construction O(N log N), queries O(log N)
-Status: Tested at Petrozavodsk, also stress-tested via LCA.cpp
+ * Author: Johan Sannemo
+ * Date: 2015-02-06
+ * License: CC0
+ * Source: Folklore
+ * Description: Calculate power of two jumps in a tree,
+ * to support fast upward jumps and LCAs.
+ * Assumes the root node points to itself.
+ * Time: construction O(N log N), queries O(log N)
+ * Status: Tested at Petrozavodsk, also stress-tested via LCA.cpp
+
 """
 
 def tree_jump(P):

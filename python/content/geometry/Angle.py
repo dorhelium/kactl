@@ -1,19 +1,20 @@
 """
-Author: Simon Lindholm
-Date: 2015-01-31
-License: CC0
-Source: me
-Description: A class for ordering angles (as represented by int points and
- a number of rotations around the origin). Useful for rotational sweeping.
- Sometimes also represents points or vectors.
-Usage:
- v = [w[0], w[0].t360(), ...]  # sorted
- j = 0
- for i in range(n):
-     while v[j] < v[i].t180():
-         j += 1
- # sweeps j such that (j-i) represents the number of positively oriented triangles with vertices at 0 and i
-Status: Used, works well
+ * Author: Simon Lindholm
+ * Date: 2015-01-31
+ * License: CC0
+ * Source: me
+ * Description: A class for ordering angles (as represented by int points and
+ *  a number of rotations around the origin). Useful for rotational sweeping.
+ *  Sometimes also represents points or vectors.
+ * Usage:
+ *  v = [w[0], w[0].t360(), ...]  // sorted
+ *  j = 0
+ *  for i in range(n):
+ *      while v[j] < v[i].t180():
+ *          j += 1
+ *  // sweeps j such that (j-i) represents the number of positively oriented triangles with vertices at 0 and i
+ * Status: Used, works well
+
 """
 
 

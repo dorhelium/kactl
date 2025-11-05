@@ -1,16 +1,17 @@
 """
-Author: Lucian Bicsi
-Date: 2018-02-14
-License: CC0
-Source: Chinese material
-Description: Generates the k'th term of an n-order
-linear recurrence S[i] = sum_j S[i-j-1]*tr[j],
-given S[0 ... >= n-1] and tr[0 ... n-1].
-Faster than matrix multiplication.
-Useful together with Berlekamp-Massey.
-Usage: linear_rec([0, 1], [1, 1], k) # k'th Fibonacci number
-Time: O(n^2 log k)
-Status: bruteforce-tested mod 5 for n <= 5
+ * Author: Lucian Bicsi
+ * Date: 2018-02-14
+ * License: CC0
+ * Source: Chinese material
+ * Description: Generates the k'th term of an n-order
+ * linear recurrence S[i] = sum_j S[i-j-1]*tr[j],
+ * given S[0 ... >= n-1] and tr[0 ... n-1].
+ * Faster than matrix multiplication.
+ * Useful together with Berlekamp-Massey.
+ * Usage: linear_rec([0, 1], [1, 1], k) // k'th Fibonacci number
+ * Time: O(n^2 log k)
+ * Status: bruteforce-tested mod 5 for n <= 5
+
 """
 
 def linear_rec(S, tr, k, mod=5):

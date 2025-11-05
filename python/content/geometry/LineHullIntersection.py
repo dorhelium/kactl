@@ -1,19 +1,20 @@
 """
-Author: Oleksandr Bacherikov, chilli
-Date: 2019-05-07
-License: Boost Software License
-Source: https://github.com/AlCash07/ACTL/blob/master/include/actl/geometry/algorithm/intersect/line_convex_polygon.hpp
-Description: Line-convex polygon intersection. The polygon must be ccw and have no collinear points.
-line_hull(line, poly) returns a tuple describing the intersection of a line with the polygon:
-  (-1, -1) if no collision,
-  (i, -1) if touching the corner i,
-  (i, i) if along side (i, i+1),
-  (i, j) if crossing sides (i, i+1) and (j, j+1).
-In the last case, if a corner i is crossed, this is treated as happening on side (i, i+1).
-The points are returned in the same order as the line hits the polygon.
-extr_vertex returns the point of a hull with the max projection onto a line.
-Time: O(log n)
-Status: stress-tested
+ * Author: Oleksandr Bacherikov, chilli
+ * Date: 2019-05-07
+ * License: Boost Software License
+ * Source: https://github.com/AlCash07/ACTL/blob/master/include/actl/geometry/algorithm/intersect/line_convex_polygon.hpp
+ * Description: Line-convex polygon intersection. The polygon must be ccw and have no collinear points.
+ * line_hull(line, poly) returns a tuple describing the intersection of a line with the polygon:
+ *   (-1, -1) if no collision,
+ *   (i, -1) if touching the corner i,
+ *   (i, i) if along side (i, i+1),
+ *   (i, j) if crossing sides (i, i+1) and (j, j+1).
+ * In the last case, if a corner i is crossed, this is treated as happening on side (i, i+1).
+ * The points are returned in the same order as the line hits the polygon.
+ * extr_vertex returns the point of a hull with the max projection onto a line.
+ * Time: O(log n)
+ * Status: stress-tested
+
 """
 
 from Point import sgn

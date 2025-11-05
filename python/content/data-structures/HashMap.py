@@ -1,10 +1,11 @@
 """
-Author: Simon Lindholm, chilli
-Date: 2018-07-23
-License: CC0
-Source: http://codeforces.com/blog/entry/60737
-Description: Hash map with custom hash function.
-Python's dict is already highly optimized, so this is a wrapper with custom hashing option.
+ * Author: Simon Lindholm, chilli
+ * Date: 2018-07-23
+ * License: CC0
+ * Source: http://codeforces.com/blog/entry/60737
+ * Description: Hash map with custom hash function.
+ * Python's dict is already highly optimized, so this is a wrapper with custom hashing option.
+
 """
 
 import time

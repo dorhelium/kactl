@@ -1,10 +1,11 @@
 """
-Author: Simon Lindholm
-Date: 2015-09-01
-License: CC0
-Description: Computes the pair of points at which two circles intersect.
-Returns None in case of no intersection, otherwise returns tuple of two points.
-Status: stress-tested
+ * Author: Simon Lindholm
+ * Date: 2015-09-01
+ * License: CC0
+ * Description: Computes the pair of points at which two circles intersect.
+ * Returns None in case of no intersection, otherwise returns tuple of two points.
+ * Status: stress-tested
+
 """
 
 import math

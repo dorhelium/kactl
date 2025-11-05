@@ -1,12 +1,13 @@
 """
-Author: Victor Lecomte, chilli
-Date: 2019-10-29
-License: CC0
-Source: https://vlecomte.github.io/cp-geo.pdf
-Description: Finds the intersection between a circle and a line.
-Returns a list of either 0, 1, or 2 intersection points.
-P is intended to be Point with float.
-Status: unit tested
+ * Author: Victor Lecomte, chilli
+ * Date: 2019-10-29
+ * License: CC0
+ * Source: https://vlecomte.github.io/cp-geo.pdf
+ * Description: Finds the intersection between a circle and a line.
+ * Returns a list of either 0, 1, or 2 intersection points.
+ * P is intended to be Point with float.
+ * Status: unit tested
+
 """
 
 import math

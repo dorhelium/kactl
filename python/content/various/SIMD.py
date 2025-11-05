@@ -1,13 +1,14 @@
 """
-Author: Simon Lindholm
-Date: 2015-03-18
-License: CC0
-Source: https://software.intel.com/sites/landingpage/IntrinsicsGuide/
-Description: Cheat sheet of SSE/AVX intrinsics, for doing arithmetic on several numbers at once.
-Can provide a constant factor improvement of about 4, orthogonal to loop unrolling.
-Note: Python does not have direct SIMD support like C++ intrinsics. For vectorized operations,
-use NumPy which provides optimized array operations that leverage SIMD under the hood.
-This file provides conceptual equivalents using NumPy.
+ * Author: Simon Lindholm
+ * Date: 2015-03-18
+ * License: CC0
+ * Source: https://software.intel.com/sites/landingpage/IntrinsicsGuide/
+ * Description: Cheat sheet of SSE/AVX intrinsics, for doing arithmetic on several numbers at once.
+ * Can provide a constant factor improvement of about 4, orthogonal to loop unrolling.
+ * Note: Python does not have direct SIMD support like C++ intrinsics. For vectorized operations,
+ * use NumPy which provides optimized array operations that leverage SIMD under the hood.
+ * This file provides conceptual equivalents using NumPy.
+
 """
 
 import numpy as np

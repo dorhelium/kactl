@@ -1,14 +1,15 @@
 """
-Author: Ulf Lundstrom
-Date: 2009-03-21
-License: CC0
-Source:
-Description:
-Returns a list with the vertices of a polygon with everything to the left of the line going from s to e cut away.
-Usage:
-    p = [...]
-    p = polygon_cut(p, Point(0, 0), Point(1, 0))
-Status: tested but not extensively
+ * Author: Ulf Lundstrom
+ * Date: 2009-03-21
+ * License: CC0
+ * Source:
+ * Description:
+ * Returns a list with the vertices of a polygon with everything to the left of the line going from s to e cut away.
+ * Usage:
+ *     p = [...]
+ *     p = polygon_cut(p, Point(0, 0), Point(1, 0))
+ * Status: tested but not extensively
+
 """
 
 

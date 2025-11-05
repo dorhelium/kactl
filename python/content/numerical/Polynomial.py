@@ -1,7 +1,8 @@
 """
-Author: David Rydh, Per Austrin
-Date: 2003-03-16
-Description: Basic polynomial operations
+ * Author: David Rydh, Per Austrin
+ * Date: 2003-03-16
+ * Description: Basic polynomial operations
+
 """
 
 class Poly:

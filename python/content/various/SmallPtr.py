@@ -1,13 +1,14 @@
 """
-Author: Simon Lindholm
-Date: 2016-08-23
-License: CC0
-Source: me
-Description: A 32-bit pointer that points into BumpAllocator memory.
-Note: This is a C++-specific optimization for reducing pointer size.
-In Python, all object references are already optimized by the interpreter.
-This implementation provides a conceptual equivalent for educational purposes.
-Status: tested
+ * Author: Simon Lindholm
+ * Date: 2016-08-23
+ * License: CC0
+ * Source: me
+ * Description: A 32-bit pointer that points into BumpAllocator memory.
+ * Note: This is a C++-specific optimization for reducing pointer size.
+ * In Python, all object references are already optimized by the interpreter.
+ * This implementation provides a conceptual equivalent for educational purposes.
+ * Status: tested
+
 """
 
 class SmallPtr:

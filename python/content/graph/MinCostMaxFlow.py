@@ -1,12 +1,13 @@
 """
-Author: Stanford
-Date: Unknown
-Source: Stanford Notebook
-Description: Min-cost max-flow.
-If costs can be negative, call setpi before maxflow, but note that negative cost cycles are not supported.
-To obtain the actual flow, look at positive values only.
-Status: Tested on kattis:mincostmaxflow, stress-tested against another implementation
-Time: O(F E log(V)) where F is max flow. O(VE) for setpi.
+ * Author: Stanford
+ * Date: Unknown
+ * Source: Stanford Notebook
+ * Description: Min-cost max-flow.
+ * If costs can be negative, call setpi before maxflow, but note that negative cost cycles are not supported.
+ * To obtain the actual flow, look at positive values only.
+ * Status: Tested on kattis:mincostmaxflow, stress-tested against another implementation
+ * Time: O(F E log(V)) where F is max flow. O(VE) for setpi.
+
 """
 
 import heapq

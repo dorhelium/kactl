@@ -1,12 +1,13 @@
 """
-Author: Mattias de Zalenski
-Date: Unknown
-Source: Geometry in C
-Description: Computes the Delaunay triangulation of a set of points.
- Each circumcircle contains none of the input points.
- If any three points are collinear or any four are on the same circle, behavior is undefined.
-Time: O(n^2)
-Status: stress-tested
+ * Author: Mattias de Zalenski
+ * Date: Unknown
+ * Source: Geometry in C
+ * Description: Computes the Delaunay triangulation of a set of points.
+ *  Each circumcircle contains none of the input points.
+ *  If any three points are collinear or any four are on the same circle, behavior is undefined.
+ * Time: O(n^2)
+ * Status: stress-tested
+
 """
 
 from Point3D import Point3D

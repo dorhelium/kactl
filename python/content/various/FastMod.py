@@ -1,17 +1,18 @@
 """
-Author: Simon Lindholm
-Date: 2020-05-30
-License: CC0
-Source: https://en.wikipedia.org/wiki/Barrett_reduction
-Description: Compute a % b about 5 times faster than usual, where b is constant but not known at compile time.
-Returns a value congruent to a (mod b) in the range [0, 2b).
-Note: Python's modulo operator is already quite optimized. This implementation demonstrates
-the Barrett reduction algorithm, but may not provide the same speedup as in C++ due to
-Python's arbitrary precision integers and different performance characteristics.
-Status: proven correct, stress-tested
-Details:
-More precisely, it can be proven that the result equals 0 only if a = 0,
-and otherwise lies in [1, (1 + a/2^64) * b).
+ * Author: Simon Lindholm
+ * Date: 2020-05-30
+ * License: CC0
+ * Source: https://en.wikipedia.org/wiki/Barrett_reduction
+ * Description: Compute a % b about 5 times faster than usual, where b is constant but not known at compile time.
+ * Returns a value congruent to a (mod b) in the range [0, 2b).
+ * Note: Python's modulo operator is already quite optimized. This implementation demonstrates
+ * the Barrett reduction algorithm, but may not provide the same speedup as in C++ due to
+ * Python's arbitrary precision integers and different performance characteristics.
+ * Status: proven correct, stress-tested
+ * Details:
+ * More precisely, it can be proven that the result equals 0 only if a = 0,
+ * and otherwise lies in [1, (1 + a/2^64) * b).
+
 """
 
 class FastMod:

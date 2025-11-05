@@ -1,11 +1,12 @@
 """
-Author: Ulf Lundstrom
-Date: 2009-04-11
-License: CC0
-Source: http://en.wikipedia.org/wiki/Circumcircle
-Description:
-The circumcircle of a triangle is the circle intersecting all three vertices. cc_radius returns the radius of the circle going through points A, B and C and cc_center returns the center of the same circle.
-Status: tested
+ * Author: Ulf Lundstrom
+ * Date: 2009-04-11
+ * License: CC0
+ * Source: http://en.wikipedia.org/wiki/Circumcircle
+ * Description:
+ * The circumcircle of a triangle is the circle intersecting all three vertices. cc_radius returns the radius of the circle going through points A, B and C and cc_center returns the center of the same circle.
+ * Status: tested
+
 """
 
 

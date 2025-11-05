@@ -1,14 +1,15 @@
 """
-Author: Ulf Lundstrom
-Date: 2009-08-03
-License: CC0
-Source: My head
-Description: Basic operations on square matrices.
-Usage: A = Matrix(3)
- A.d = [[1,2,3], [4,5,6], [7,8,9]]
- vec = [1,2,3]
- vec = (A ** N) * vec
-Status: tested
+ * Author: Ulf Lundstrom
+ * Date: 2009-08-03
+ * License: CC0
+ * Source: My head
+ * Description: Basic operations on square matrices.
+ * Usage: A = Matrix(3)
+ *  A.d = [[1,2,3], [4,5,6], [7,8,9]]
+ *  vec = [1,2,3]
+ *  vec = (A ** N) * vec
+ * Status: tested
+
 """
 
 class Matrix:

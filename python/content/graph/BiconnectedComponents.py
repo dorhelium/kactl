@@ -1,22 +1,23 @@
 """
-Author: Simon Lindholm
-Date: 2017-04-17
-License: CC0
-Source: folklore
-Description: Finds all biconnected components in an undirected graph, and
-runs a callback for the edges in each. In a biconnected component there
-are at least two distinct paths between any two nodes. Note that a node can
-be in several components. An edge which is not in a component is a bridge,
-i.e., not part of any cycle.
-Usage:
-eid = 0; ed = [[] for _ in range(N)]
-for each edge (a,b):
-    ed[a].append((b, eid))
-    ed[b].append((a, eid))
-    eid += 1
-bicomps(lambda edgelist: ...)
-Time: O(E + V)
-Status: tested during MIPT ICPC Workshop 2017
+ * Author: Simon Lindholm
+ * Date: 2017-04-17
+ * License: CC0
+ * Source: folklore
+ * Description: Finds all biconnected components in an undirected graph, and
+ * runs a callback for the edges in each. In a biconnected component there
+ * are at least two distinct paths between any two nodes. Note that a node can
+ * be in several components. An edge which is not in a component is a bridge,
+ * i.e., not part of any cycle.
+ * Usage:
+ * eid = 0; ed = [[] for _ in range(N)]
+ * for each edge (a,b):
+ *     ed[a].append((b, eid))
+ *     ed[b].append((a, eid))
+ *     eid += 1
+ * bicomps(lambda edgelist: ...)
+ * Time: O(E + V)
+ * Status: tested during MIPT ICPC Workshop 2017
+
 """
 
 num = []

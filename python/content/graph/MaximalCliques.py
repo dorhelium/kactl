@@ -1,18 +1,19 @@
 """
-Author: Simon Lindholm
-Date: 2018-07-18
-License: CC0
-Source: https://en.wikipedia.org/wiki/Bron-Kerbosch_algorithm
-Description: Runs a callback for all maximal cliques in a graph (given as a
-symmetric bitset matrix; self-edges not allowed). Callback is given a bitset
-representing the maximal clique.
-Time: O(3^(n/3)), much faster for sparse graphs
-Status: stress-tested
+ * Author: Simon Lindholm
+ * Date: 2018-07-18
+ * License: CC0
+ * Source: https://en.wikipedia.org/wiki/Bron-Kerbosch_algorithm
+ * Description: Runs a callback for all maximal cliques in a graph (given as a
+ * symmetric bitset matrix; self-edges not allowed). Callback is given a bitset
+ * representing the maximal clique.
+ * Time: O(3^(n/3)), much faster for sparse graphs
+ * Status: stress-tested
 
-Possible optimization: on the top-most
-recursion level, ignore 'cands', and go through nodes in order of increasing
-degree, where degrees go down as nodes are removed.
-(mostly irrelevant given MaximumClique)
+ * Possible optimization: on the top-most
+ * recursion level, ignore 'cands', and go through nodes in order of increasing
+ * degree, where degrees go down as nodes are removed.
+ * (mostly irrelevant given MaximumClique)
+
 """
 
 def cliques(eds, f, P=None, X=None, R=None):

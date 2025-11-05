@@ -1,14 +1,15 @@
 """
-Author: Simon Lindholm
-Date: 2016-12-15
-License: CC0
-Source: http://en.wikipedia.org/wiki/Floyd-Warshall_algorithm
-Description: Calculates all-pairs shortest path in a directed graph that might have negative edge weights.
-Input is a distance matrix m, where m[i][j] = inf if i and j are not adjacent.
-As output, m[i][j] is set to the shortest distance between i and j, inf if no path,
-or -inf if the path goes through a negative-weight cycle.
-Time: O(N^3)
-Status: slightly tested
+ * Author: Simon Lindholm
+ * Date: 2016-12-15
+ * License: CC0
+ * Source: http://en.wikipedia.org/wiki/Floyd-Warshall_algorithm
+ * Description: Calculates all-pairs shortest path in a directed graph that might have negative edge weights.
+ * Input is a distance matrix m, where m[i][j] = inf if i and j are not adjacent.
+ * As output, m[i][j] is set to the shortest distance between i and j, inf if no path,
+ * or -inf if the path goes through a negative-weight cycle.
+ * Time: O(N^3)
+ * Status: slightly tested
+
 """
 
 INF = 1 << 62

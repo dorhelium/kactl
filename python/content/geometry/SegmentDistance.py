@@ -1,16 +1,17 @@
 """
-Author: Ulf Lundstrom
-Date: 2009-03-21
-License: CC0
-Source:
-Description:
-Returns the shortest distance between point p and the line segment from point s to e.
-Usage:
-    a = Point(0, 0)
-    b = Point(2, 2)
-    p = Point(1, 1)
-    on_segment = seg_dist(a, b, p) < 1e-10
-Status: tested
+ * Author: Ulf Lundstrom
+ * Date: 2009-03-21
+ * License: CC0
+ * Source:
+ * Description:
+ * Returns the shortest distance between point p and the line segment from point s to e.
+ * Usage:
+ *     a = Point(0, 0)
+ *     b = Point(2, 2)
+ *     p = Point(1, 1)
+ *     on_segment = seg_dist(a, b, p) < 1e-10
+ * Status: tested
+
 """
 
 

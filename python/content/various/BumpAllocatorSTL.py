@@ -1,14 +1,15 @@
 """
-Author: Simon Lindholm
-Date: 2016-07-23
-License: CC0
-Source: me
-Description: BumpAllocator for STL containers.
-Note: This is a C++-specific optimization technique. Python's lists and containers
-already use efficient memory allocation strategies. This is provided for reference
-and educational purposes.
-Usage: In Python, just use regular lists - list allocation is already efficient
-Status: tested
+ * Author: Simon Lindholm
+ * Date: 2016-07-23
+ * License: CC0
+ * Source: me
+ * Description: BumpAllocator for STL containers.
+ * Note: This is a C++-specific optimization technique. Python's lists and containers
+ * already use efficient memory allocation strategies. This is provided for reference
+ * and educational purposes.
+ * Usage: In Python, just use regular lists - list allocation is already efficient
+ * Status: tested
+
 """
 
 class SmallAllocator:

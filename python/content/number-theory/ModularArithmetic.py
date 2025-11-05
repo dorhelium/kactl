@@ -1,10 +1,11 @@
 """
-Author: Lukas Polacek
-Date: 2009-09-28
-License: CC0
-Source: folklore
-Description: Operators for modular arithmetic. You need to set mod to
-some number first and then you can use the structure.
+ * Author: Lukas Polacek
+ * Date: 2009-09-28
+ * License: CC0
+ * Source: folklore
+ * Description: Operators for modular arithmetic. You need to set mod to
+ * some number first and then you can use the structure.
+
 """
 
 def euclid(a, b):

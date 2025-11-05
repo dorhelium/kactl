@@ -1,11 +1,12 @@
 """
-Author: Ulf Lundstrom
-Date: 2009-02-26
-License: CC0
-Source: My head with inspiration from tinyKACTL
-Description: Class to handle points in the plane.
-    T can be e.g. float or int. (Avoid using only int for division operations.)
-Status: Works fine, used a lot
+ * Author: Ulf Lundstrom
+ * Date: 2009-02-26
+ * License: CC0
+ * Source: My head with inspiration from tinyKACTL
+ * Description: Class to handle points in the plane.
+ *     T can be e.g. float or int. (Avoid using only int for division operations.)
+ * Status: Works fine, used a lot
+
 """
 
 import math

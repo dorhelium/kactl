@@ -1,15 +1,16 @@
 """
-Author: Simon Lindholm
-Date: 2015-02-11
-License: CC0
-Source: Wikipedia
-Description: Fast integration using an adaptive Simpson's rule.
-Usage:
-    sphere_volume = quad(-1, 1, lambda x:
-        quad(-1, 1, lambda y:
-        quad(-1, 1, lambda z:
-        x*x + y*y + z*z < 1)))
-Status: mostly untested
+ * Author: Simon Lindholm
+ * Date: 2015-02-11
+ * License: CC0
+ * Source: Wikipedia
+ * Description: Fast integration using an adaptive Simpson's rule.
+ * Usage:
+ *     sphere_volume = quad(-1, 1, lambda x:
+ *         quad(-1, 1, lambda y:
+ *         quad(-1, 1, lambda z:
+ *         x*x + y*y + z*z < 1)))
+ * Status: mostly untested
+
 """
 
 def _simpson(f, a, b):

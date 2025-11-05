@@ -1,11 +1,12 @@
 """
-Author: Mattias de Zalenski, Fredrik Niemelä, Per Austrin, Simon Lindholm
-Date: 2002-09-26
-Source: Max Bennedich
-Description: Computes C(k_1 + ... + k_n; k_1, k_2, ..., k_n) = (sum k_i)! / (k_1! * k_2! * ... * k_n!)
-This is the multinomial coefficient, which counts the number of ways to arrange
-sum(k_i) objects where there are k_i objects of type i.
-Status: Tested on kattis:lexicography
+ * Author: Mattias de Zalenski, Fredrik Niemelä, Per Austrin, Simon Lindholm
+ * Date: 2002-09-26
+ * Source: Max Bennedich
+ * Description: Computes C(k_1 + ... + k_n; k_1, k_2, ..., k_n) = (sum k_i)! / (k_1! * k_2! * ... * k_n!)
+ * This is the multinomial coefficient, which counts the number of ways to arrange
+ * sum(k_i) objects where there are k_i objects of type i.
+ * Status: Tested on kattis:lexicography
+
 """
 
 def multinomial(v):

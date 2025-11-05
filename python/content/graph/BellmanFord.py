@@ -1,12 +1,13 @@
 """
-Author: Simon Lindholm
-Date: 2015-02-23
-License: CC0
-Source: http://en.wikipedia.org/wiki/Bellman-Ford_algorithm
-Description: Calculates shortest paths from s in a graph that might have negative edge weights.
-Unreachable nodes get dist = inf; nodes reachable through negative-weight cycles get dist = -inf.
-Time: O(VE)
-Status: Tested on kattis:shortestpath3
+ * Author: Simon Lindholm
+ * Date: 2015-02-23
+ * License: CC0
+ * Source: http://en.wikipedia.org/wiki/Bellman-Ford_algorithm
+ * Description: Calculates shortest paths from s in a graph that might have negative edge weights.
+ * Unreachable nodes get dist = inf; nodes reachable through negative-weight cycles get dist = -inf.
+ * Time: O(VE)
+ * Status: Tested on kattis:shortestpath3
+
 """
 
 INF = float('inf')

@@ -1,19 +1,20 @@
 """
-Author: Victor Lecomte, chilli
-Date: 2019-04-27
-License: CC0
-Source: https://vlecomte.github.io/cp-geo.pdf
-Description:
-If a unique intersection point between the line segments going from s1 to e1 and from s2 to e2 exists then it is returned.
-If no intersection point exists an empty list is returned.
-If infinitely many exist a list with 2 elements is returned, containing the endpoints of the common line segment.
-The wrong position will be returned if P is Point with int and the intersection point does not have integer coordinates.
-Products of three coordinates are used in intermediate steps so watch out for overflow if using int.
-Usage:
-    inter = seg_inter(s1, e1, s2, e2)
-    if len(inter) == 1:
-        print("segments intersect at", inter[0])
-Status: stress-tested, tested on kattis:intersection
+ * Author: Victor Lecomte, chilli
+ * Date: 2019-04-27
+ * License: CC0
+ * Source: https://vlecomte.github.io/cp-geo.pdf
+ * Description:
+ * If a unique intersection point between the line segments going from s1 to e1 and from s2 to e2 exists then it is returned.
+ * If no intersection point exists an empty list is returned.
+ * If infinitely many exist a list with 2 elements is returned, containing the endpoints of the common line segment.
+ * The wrong position will be returned if P is Point with int and the intersection point does not have integer coordinates.
+ * Products of three coordinates are used in intermediate steps so watch out for overflow if using int.
+ * Usage:
+ *     inter = seg_inter(s1, e1, s2, e2)
+ *     if len(inter) == 1:
+ *         print("segments intersect at", inter[0])
+ * Status: stress-tested, tested on kattis:intersection
+
 """
 
 from Point import sgn

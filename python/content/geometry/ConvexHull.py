@@ -1,13 +1,14 @@
 """
-Author: Stjepan Glavina, chilli
-Date: 2019-05-05
-License: Unlicense
-Source: https://github.com/stjepang/snippets/blob/master/convex_hull.cpp
-Description:
-Returns a list of the points of the convex hull in counter-clockwise order.
-Points on the edge of the hull between two other points are not considered part of the hull.
-Time: O(n log n)
-Status: stress-tested, tested with kattis:convexhull
+ * Author: Stjepan Glavina, chilli
+ * Date: 2019-05-05
+ * License: Unlicense
+ * Source: https://github.com/stjepang/snippets/blob/master/convex_hull.cpp
+ * Description:
+ * Returns a list of the points of the convex hull in counter-clockwise order.
+ * Points on the edge of the hull between two other points are not considered part of the hull.
+ * Time: O(n log n)
+ * Status: stress-tested, tested with kattis:convexhull
+
 """
 
 

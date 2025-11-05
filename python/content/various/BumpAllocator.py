@@ -1,14 +1,15 @@
 """
-Author: Simon Lindholm
-Date: 2015-09-12
-License: CC0
-Source: me
-Description: When you need to dynamically allocate many objects and don't care about freeing them.
-"new X" otherwise has an overhead of something like 0.05us + 16 bytes per allocation.
-Note: This is a C++-specific optimization technique. In Python, memory management is automatic
-and this pattern is not directly applicable. This implementation provides a conceptual equivalent
-using a pre-allocated buffer with a simple bump allocator pattern.
-Status: tested
+ * Author: Simon Lindholm
+ * Date: 2015-09-12
+ * License: CC0
+ * Source: me
+ * Description: When you need to dynamically allocate many objects and don't care about freeing them.
+ * "new X" otherwise has an overhead of something like 0.05us + 16 bytes per allocation.
+ * Note: This is a C++-specific optimization technique. In Python, memory management is automatic
+ * and this pattern is not directly applicable. This implementation provides a conceptual equivalent
+ * using a pre-allocated buffer with a simple bump allocator pattern.
+ * Status: tested
+
 """
 
 class BumpAllocator:

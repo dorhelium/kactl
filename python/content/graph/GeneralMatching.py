@@ -1,12 +1,13 @@
 """
-Author: Simon Lindholm
-Date: 2016-12-09
-License: CC0
-Source: http://www.mimuw.edu.pl/~mucha/pub/mucha_sankowski_focs04.pdf
-Description: Matching for general graphs.
-Fails with probability N / mod.
-Time: O(N^3)
-Status: not very well tested
+ * Author: Simon Lindholm
+ * Date: 2016-12-09
+ * License: CC0
+ * Source: http://www.mimuw.edu.pl/~mucha/pub/mucha_sankowski_focs04.pdf
+ * Description: Matching for general graphs.
+ * Fails with probability N / mod.
+ * Time: O(N^3)
+ * Status: not very well tested
+
 """
 
 # Note: This requires MatrixInverse-mod.py from numerical section

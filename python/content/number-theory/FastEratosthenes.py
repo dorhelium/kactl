@@ -1,19 +1,20 @@
 """
-Author: Jakob Kogler, chilli, pajenegod
-Date: 2020-04-12
-License: CC0
-Description: Prime sieve for generating all primes smaller than LIM.
-Time: LIM=1e9 ≈ 1.5s
-Status: Stress-tested
-Details: Despite its n log log n complexity, segmented sieve is still faster
-than other options, including bitset sieves and linear sieves. This is
-primarily due to its low memory usage, which reduces cache misses. This
-implementation skips even numbers.
+ * Author: Jakob Kogler, chilli, pajenegod
+ * Date: 2020-04-12
+ * License: CC0
+ * Description: Prime sieve for generating all primes smaller than LIM.
+ * Time: LIM=1e9 ≈ 1.5s
+ * Status: Stress-tested
+ * Details: Despite its n log log n complexity, segmented sieve is still faster
+ * than other options, including bitset sieves and linear sieves. This is
+ * primarily due to its low memory usage, which reduces cache misses. This
+ * implementation skips even numbers.
 
-Benchmark can be found here: https://ideone.com/e7TbX4
+ * Benchmark can be found here: https://ideone.com/e7TbX4
 
-The line `for i in range(idx, S+L, p)` is done on purpose for performance reasons.
-See https://github.com/kth-competitive-programming/kactl/pull/166#discussion_r408354338
+ * The line `for i in range(idx, S+L, p)` is done on purpose for performance reasons.
+ * See https://github.com/kth-competitive-programming/kactl/pull/166//discussion_r408354338
+
 """
 
 def eratosthenes(lim):

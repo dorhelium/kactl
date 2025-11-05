@@ -1,20 +1,21 @@
 """
-Author: Stanford
-Source: Stanford Notebook
-License: MIT
-Description: Solves a general linear maximization problem: maximize c^T x subject to Ax <= b, x >= 0.
-Returns -inf if there is no solution, inf if there are arbitrarily good solutions, or the maximum value of c^T x otherwise.
-The input vector is set to an optimal x (or in the unbounded case, an arbitrary solution fulfilling the constraints).
-Numerical stability is not guaranteed. For better performance, define variables such that x = 0 is viable.
-Usage:
-    A = [[1, -1], [-1, 1], [-1, -2]]
-    b = [1, 1, -4]
-    c = [-1, -1]
-    solver = LPSolver(A, b, c)
-    x = []
-    val = solver.solve(x)
-Time: O(NM * #pivots), where a pivot may be e.g. an edge relaxation. O(2^n) in the general case.
-Status: seems to work?
+ * Author: Stanford
+ * Source: Stanford Notebook
+ * License: MIT
+ * Description: Solves a general linear maximization problem: maximize c^T x subject to Ax <= b, x >= 0.
+ * Returns -inf if there is no solution, inf if there are arbitrarily good solutions, or the maximum value of c^T x otherwise.
+ * The input vector is set to an optimal x (or in the unbounded case, an arbitrary solution fulfilling the constraints).
+ * Numerical stability is not guaranteed. For better performance, define variables such that x = 0 is viable.
+ * Usage:
+ *     A = [[1, -1], [-1, 1], [-1, -2]]
+ *     b = [1, 1, -4]
+ *     c = [-1, -1]
+ *     solver = LPSolver(A, b, c)
+ *     x = []
+ *     val = solver.solve(x)
+ * Time: O(NM * //pivots), where a pivot may be e.g. an edge relaxation. O(2^n) in the general case.
+ * Status: seems to work?
+
 """
 
 EPS = 1e-8

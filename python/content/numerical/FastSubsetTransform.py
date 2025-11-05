@@ -1,13 +1,14 @@
 """
-Author: Lucian Bicsi
-Date: 2015-06-25
-License: GNU Free Documentation License 1.2
-Source: csacademy
-Description: Transform to a basis with fast convolutions of the form
-c[z] = sum_{z = x op y} a[x] * b[y],
-where op is one of AND, OR, XOR. The size of a must be a power of two.
-Time: O(N log N)
-Status: stress-tested
+ * Author: Lucian Bicsi
+ * Date: 2015-06-25
+ * License: GNU Free Documentation License 1.2
+ * Source: csacademy
+ * Description: Transform to a basis with fast convolutions of the form
+ * c[z] = sum_{z = x op y} a[x] * b[y],
+ * where op is one of AND, OR, XOR. The size of a must be a power of two.
+ * Time: O(N log N)
+ * Status: stress-tested
+
 """
 
 def fst(a, inv, op='AND'):

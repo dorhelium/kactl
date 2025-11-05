@@ -1,10 +1,11 @@
 """
-Author: Simon Lindholm
-Date: 2015-03-15
-License: CC0
-Source: own work
-Description: Self-explanatory methods for string hashing.
-Status: stress-tested
+ * Author: Simon Lindholm
+ * Date: 2015-03-15
+ * License: CC0
+ * Source: own work
+ * Description: Self-explanatory methods for string hashing.
+ * Status: stress-tested
+
 """
 
 

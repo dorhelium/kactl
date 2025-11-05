@@ -1,18 +1,19 @@
 """
-Author: Simon Lindholm
-Date: 2015-03-19
-License: CC0
-Source: me
-Description: Loop unrolling pattern for optimization.
-Note: In Python, loop unrolling typically doesn't provide performance benefits
-like in C++. Python's performance is better improved through:
-1. Using list comprehensions
-2. Using NumPy for numerical operations
-3. Using built-in functions (map, filter, etc.)
-4. Using itertools for efficient iteration
-5. Using numba.jit for JIT compilation
+ * Author: Simon Lindholm
+ * Date: 2015-03-19
+ * License: CC0
+ * Source: me
+ * Description: Loop unrolling pattern for optimization.
+ * Note: In Python, loop unrolling typically doesn't provide performance benefits
+ * like in C++. Python's performance is better improved through:
+ * 1. Using list comprehensions
+ * 2. Using NumPy for numerical operations
+ * 3. Using built-in functions (map, filter, etc.)
+ * 4. Using itertools for efficient iteration
+ * 5. Using numba.jit for JIT compilation
 
-This file provides the pattern for reference and educational purposes.
+ * This file provides the pattern for reference and educational purposes.
+
 """
 
 def unrolled_loop_example(data, from_idx, to_idx, operation):

@@ -1,10 +1,11 @@
 """
-Author: Noam527
-Date: 2019-04-24
-License: CC0
-Source: folklore
-Description: Modular exponentiation
-Status: tested
+ * Author: Noam527
+ * Date: 2019-04-24
+ * License: CC0
+ * Source: folklore
+ * Description: Modular exponentiation
+ * Status: tested
+
 """
 
 MOD = 1000000007  # faster if const
